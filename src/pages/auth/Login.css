@@ -1,0 +1,88 @@
+.login-page-wrapper {
+  background-image: url('../../assets/login_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.login-page-wrapper .container {
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-text {
+  color: #0b2e6f;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.login-card {
+  border: none;
+  border-radius: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.login-card .card-body {
+  padding: 2.5rem;
+}
+
+.login-card .form-label {
+  font-weight: 600;
+  color: #212529;
+}
+
+.login-card .form-control {
+  border-color: #ced4da;
+  box-shadow: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+}
+
+.login-card .form-control:focus {
+  border-color: #0b2e6f;
+  box-shadow: 0 0 0 0.15rem rgba(11, 46, 111, 0.15);
+}
+
+.login-card .btn-primary {
+  background-color: #0b2e6f;
+  border-color: #0b2e6f;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  font-weight: 600;
+}
+
+.login-card .btn-primary:hover,
+.login-card .btn-primary:focus {
+  background-color: #092753;
+  border-color: #081f48;
+}
+
+.login-card .text-center p {
+  margin-bottom: 0.5rem;
+}
+
+.login-card a {
+  color: #0b2e6f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-card a:hover {
+  color: #081f48;
+  text-decoration: underline;
+}

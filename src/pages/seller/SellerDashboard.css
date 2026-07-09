@@ -1,0 +1,93 @@
+.seller-dashboard-container {
+  background-color: #f2f6fb;
+  min-height: 100vh;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.seller-dashboard-header {
+  background-color: #0b2e6f;
+  color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(11, 46, 111, 0.14);
+}
+
+.seller-dashboard-header .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.seller-dashboard-header .btn-logout {
+  background-color: #1d4fa8;
+  border-color: #1d4fa8;
+  color: #ffffff;
+}
+
+.seller-dashboard-header .btn-logout:hover,
+.seller-dashboard-header .btn-logout:focus {
+  background-color: #143f80;
+  border-color: #143f80;
+  color: #ffffff;
+}
+
+.seller-panel-card,
+.seller-dashboard-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(15, 44, 89, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 1.25rem rgba(11, 46, 111, 0.08);
+}
+
+.seller-panel-card {
+  padding: 1.5rem;
+}
+
+.seller-dashboard-card .card-body {
+  padding: 1.5rem;
+}
+
+.seller-dashboard-card h5,
+.seller-dashboard-card h6 {
+  color: #0f2c59;
+}
+
+.seller-dashboard-card p,
+.seller-dashboard-card small,
+.seller-panel-card p {
+  color: #4f597d;
+}
+
+.seller-dashboard-card .btn-primary,
+.seller-panel-card .btn-primary {
+  background-color: #0b2e6f;
+  border-color: #0b2e6f;
+}
+
+.seller-dashboard-card .btn-primary:hover,
+.seller-dashboard-card .btn-primary:focus,
+.seller-panel-card .btn-primary:hover,
+.seller-panel-card .btn-primary:focus {
+  background-color: #0a265f;
+  border-color: #09214d;
+}
+
+.seller-dashboard-card .icon-wrapper {
+  background-color: rgba(11, 46, 111, 0.08);
+  border-radius: 0.85rem;
+  padding: 0.75rem;
+}
+
+.seller-dashboard-card .icon-wrapper svg {
+  color: #0b2e6f;
+}
+
+@media (max-width: 767.98px) {
+  .seller-dashboard-container {
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .seller-dashboard-header {
+    border-radius: 0.9rem;
+  }
+}
