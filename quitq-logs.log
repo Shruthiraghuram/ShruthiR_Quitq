@@ -1,46 +1,1025 @@
-2026-07-02T13:26:53.060+05:30  INFO 8648 --- [quitq] [restartedMain] com.quitq.QuitqApplication               : Starting QuitqApplication using Java 21.0.11 with PID 8648 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
-2026-07-02T13:26:53.067+05:30  INFO 8648 --- [quitq] [restartedMain] com.quitq.QuitqApplication               : No active profile set, falling back to 1 default profile: "default"
-2026-07-02T13:26:53.187+05:30  INFO 8648 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-07-02T13:26:53.187+05:30  INFO 8648 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-07-02T13:26:55.645+05:30  INFO 8648 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-07-02T13:26:55.876+05:30  INFO 8648 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 10 JPA repository interfaces.
-2026-07-02T13:26:57.634+05:30  INFO 8648 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-07-02T13:26:57.684+05:30  INFO 8648 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-07-02T13:26:57.685+05:30  INFO 8648 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-07-02T13:26:57.851+05:30  INFO 8648 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4660 ms
-2026-07-02T13:26:58.482+05:30  INFO 8648 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-07-02T13:26:58.619+05:30  INFO 8648 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-07-02T13:26:59.752+05:30  INFO 8648 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-07-02T13:26:59.803+05:30  INFO 8648 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-07-02T13:27:00.440+05:30  INFO 8648 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a9076e
-2026-07-02T13:27:00.443+05:30  INFO 8648 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-07-02T13:27:00.549+05:30  WARN 8648 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-07-02T13:27:00.593+05:30  INFO 8648 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/quitq]
+2026-07-09T00:02:09.487+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 7
+2026-07-09T00:02:09.547+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 7
+2026-07-09T00:02:13.611+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:02:13.611+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:02:13.620+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:02:13.624+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:07:26.770+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Adding product ID: 9 to cart for user ID: 7
+2026-07-09T00:07:26.772+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:07:26.781+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:07:26.812+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 12
+2026-07-09T00:07:30.825+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:07:30.826+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:07:30.834+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:07:30.861+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:07:30.861+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:07:30.866+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:07:35.475+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:07:35.475+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:07:35.483+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 7
+2026-07-09T00:07:35.489+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:07:35.514+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 7
+2026-07-09T00:07:35.523+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:07:35.523+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:07:35.523+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:07:42.978+05:30  INFO 26072 --- [quitq] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 52 class path changes (0 additions, 52 deletions, 0 modifications)
+2026-07-09T00:07:42.991+05:30  INFO 26072 --- [quitq] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-09T00:07:43.603+05:30  INFO 26072 --- [quitq] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-09T00:07:43.619+05:30  INFO 26072 --- [quitq] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T00:07:43.632+05:30  INFO 26072 --- [quitq] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-07-09T00:07:43.641+05:30  INFO 26072 --- [quitq] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-07-09T00:07:44.617+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 26072 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T00:07:44.617+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T00:07:45.996+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T00:07:46.015+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-07-09T00:07:46.517+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T00:07:46.524+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T00:07:46.524+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T00:07:46.822+05:30  INFO 26072 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2189 ms
+2026-07-09T00:07:47.152+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T00:07:47.280+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T00:07:47.310+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-07-09T00:07:47.354+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@484194af
+2026-07-09T00:07:47.355+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-07-09T00:07:47.359+05:30  WARN 26072 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T00:07:47.361+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
 	Database version: 9.5
-	Default catalog/schema: quitq/undefined
+	Default catalog/schema: QuitQ/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
 	JDBC fetch size: none
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-07-02T13:27:02.317+05:30  INFO 8648 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-07-02T13:27:02.436+05:30  INFO 8648 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-07-02T13:27:02.554+05:30  INFO 8648 --- [quitq] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-07-02T13:27:03.534+05:30  WARN 8648 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-07-09T00:07:47.430+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T00:07:47.433+05:30  INFO 26072 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T00:07:48.391+05:30  WARN 26072 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: c7ab8baf-4478-4e6c-9230-a3b787e230d1
+Using generated security password: d363d9ab-b170-4002-9561-989d387760bd
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-07-02T13:27:03.558+05:30  INFO 8648 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-07-02T13:27:05.041+05:30  INFO 8648 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-07-02T13:27:05.061+05:30  INFO 8648 --- [quitq] [restartedMain] com.quitq.QuitqApplication               : Started QuitqApplication in 12.885 seconds (process running for 13.555)
-2026-07-02T13:28:15.952+05:30  INFO 8648 --- [quitq] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-07-02T13:28:15.953+05:30  INFO 8648 --- [quitq] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-07-02T13:28:15.956+05:30  INFO 8648 --- [quitq] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-07-02T13:28:16.044+05:30  INFO 8648 --- [quitq] [http-nio-8080-exec-3] com.quitq.service.UserService            : Login attempt for email: anjali@gmail.com
-2026-07-02T13:28:16.925+05:30  INFO 8648 --- [quitq] [http-nio-8080-exec-3] com.quitq.service.UserService            : Login successful for email: anjali@gmail.com
+2026-07-09T00:07:48.442+05:30  INFO 26072 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T00:07:48.624+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T00:07:48.627+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T00:07:48.629+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T00:07:48.636+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-07-09T00:07:48.636+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 4.544 seconds (process running for 27135.501)
+2026-07-09T00:07:48.639+05:30  INFO 26072 --- [quitq] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ServletWebSecurityAutoConfiguration.EnableWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ServletWebSecurityAutoConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-07-09T00:07:49.034+05:30  WARN 26072 --- [quitq] [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [213] milliseconds.
+2026-07-09T00:07:49.812+05:30  INFO 26072 --- [quitq] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-09T00:07:49.817+05:30  INFO 26072 --- [quitq] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-09T00:07:50.297+05:30  INFO 26072 --- [quitq] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-09T00:07:50.301+05:30  INFO 26072 --- [quitq] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T00:07:50.305+05:30  INFO 26072 --- [quitq] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-07-09T00:07:50.315+05:30  INFO 26072 --- [quitq] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-07-09T00:07:50.572+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 26072 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T00:07:50.572+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T00:07:51.305+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T00:07:51.305+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-07-09T00:07:52.241+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T00:07:52.241+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T00:07:52.241+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T00:07:52.449+05:30  INFO 26072 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1861 ms
+2026-07-09T00:07:52.606+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T00:07:52.725+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T00:07:52.734+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-07-09T00:07:52.767+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f21d249
+2026-07-09T00:07:52.767+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-07-09T00:07:52.767+05:30  WARN 26072 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T00:07:52.771+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T00:07:52.826+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T00:07:52.826+05:30  INFO 26072 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T00:07:53.147+05:30  WARN 26072 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4a5cf9e-e348-447e-b0b9-631efd266783
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T00:07:53.182+05:30  INFO 26072 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T00:07:53.361+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T00:07:53.369+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 2.864 seconds (process running for 27140.233)
+2026-07-09T00:07:53.374+05:30  INFO 26072 --- [quitq] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-09T00:07:57.143+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T00:07:57.143+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T00:07:57.146+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-07-09T00:08:07.215+05:30  INFO 26072 --- [quitq] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 51 class path changes (51 additions, 0 deletions, 0 modifications)
+2026-07-09T00:08:07.219+05:30  INFO 26072 --- [quitq] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-09T00:08:07.451+05:30  INFO 26072 --- [quitq] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-09T00:08:07.462+05:30  INFO 26072 --- [quitq] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T00:08:07.462+05:30  INFO 26072 --- [quitq] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-07-09T00:08:07.469+05:30  INFO 26072 --- [quitq] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-07-09T00:08:07.631+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 26072 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T00:08:07.631+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T00:08:08.982+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T00:08:09.053+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2026-07-09T00:08:09.239+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T00:08:09.239+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T00:08:09.239+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T00:08:09.284+05:30  INFO 26072 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1653 ms
+2026-07-09T00:08:09.391+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T00:08:09.432+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T00:08:09.432+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-07-09T00:08:09.444+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@746b4de7
+2026-07-09T00:08:09.444+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-07-09T00:08:09.452+05:30  WARN 26072 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T00:08:09.453+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T00:08:09.730+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T00:08:09.759+05:30  INFO 26072 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T00:08:10.074+05:30  WARN 26072 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 79f33c71-a9c0-49d0-891a-da9c2f5df94b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T00:08:10.074+05:30  INFO 26072 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T00:08:10.313+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T00:08:10.315+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 2.727 seconds (process running for 27157.182)
+2026-07-09T00:08:10.321+05:30  INFO 26072 --- [quitq] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ServletWebSecurityAutoConfiguration.EnableWebSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   ServletWebSecurityAutoConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-07-09T00:08:20.163+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T00:08:20.163+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T00:08:20.163+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-07-09T00:08:20.175+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.OrderService    : Placing order for user ID: 7
+2026-07-09T00:08:20.189+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:08:20.189+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:20.243+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:20.261+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.OrderService    : Order placed successfully with ID: 11
+2026-07-09T00:08:20.272+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 7
+2026-07-09T00:08:20.272+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:20.274+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:20.280+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 7
+2026-07-09T00:08:20.287+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.OrderService    : Cart cleared after order placement for user ID: 7
+2026-07-09T00:08:20.304+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 7
+2026-07-09T00:08:20.304+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:20.308+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:20.311+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 7
+2026-07-09T00:08:26.343+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:08:26.343+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:08:26.356+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:08:26.388+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:08:28.692+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Adding product ID: 10 to cart for user ID: 7
+2026-07-09T00:08:28.693+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:28.696+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:28.721+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 13
+2026-07-09T00:08:31.772+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:08:31.773+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:31.775+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:31.783+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:08:31.783+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:31.787+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:35.663+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:08:35.664+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:35.667+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:35.668+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 7
+2026-07-09T00:08:35.676+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:08:35.676+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:35.680+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:35.680+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 7
+2026-07-09T00:08:41.047+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.OrderService    : Placing order for user ID: 7
+2026-07-09T00:08:41.054+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T00:08:41.054+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:41.055+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:41.075+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.OrderService    : Order placed successfully with ID: 12
+2026-07-09T00:08:41.087+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 7
+2026-07-09T00:08:41.087+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:41.087+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:41.095+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 7
+2026-07-09T00:08:41.100+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.OrderService    : Cart cleared after order placement for user ID: 7
+2026-07-09T00:08:41.109+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 7
+2026-07-09T00:08:41.109+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T00:08:41.113+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T00:08:41.113+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 7
+2026-07-09T00:08:43.462+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 7
+2026-07-09T00:08:43.472+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 7
+2026-07-09T00:08:46.269+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:08:46.269+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:08:46.277+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:08:46.282+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:18:02.137+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: raj@gmail.com
+2026-07-09T00:18:02.153+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.SellerService   : Seller login successful for email: raj@gmail.com
+2026-07-09T00:18:07.893+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:18:07.905+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:18:12.205+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:18:12.213+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:18:12.222+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:18:12.231+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:18:48.654+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T00:18:48.693+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T00:30:53.369+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:30:53.380+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:30:53.386+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:30:53.396+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:31:05.830+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T00:31:05.857+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T00:31:40.907+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:31:40.912+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:31:40.925+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:31:40.942+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:36:19.548+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: raj@gmail.com
+2026-07-09T00:36:19.553+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.SellerService   : Seller login successful for email: raj@gmail.com
+2026-07-09T00:36:25.577+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:36:25.585+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:36:29.554+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:36:29.558+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:36:29.562+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:36:29.588+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:36:39.937+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:36:39.942+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:36:39.944+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:36:39.955+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T00:36:47.905+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T00:36:47.963+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T00:37:13.068+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: raj@gmail.com
+2026-07-09T00:37:13.078+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.SellerService   : Seller login successful for email: raj@gmail.com
+2026-07-09T00:37:47.658+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.UserService   : Login attempt for email: jon@gmailcom
+2026-07-09T00:37:47.688+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:37:47.688+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:37:47.697+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:37:47.703+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:38:01.102+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Login attempt for admin with email: admin@quitq.com
+2026-07-09T00:38:01.146+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Admin login successful for email: admin@quitq.com
+2026-07-09T00:38:01.171+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T00:38:01.171+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T00:38:01.173+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T00:38:01.178+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T00:38:01.178+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T00:38:01.178+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T00:38:01.178+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:38:01.181+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T00:38:01.191+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T00:38:01.191+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T00:38:01.192+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T00:38:01.192+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:38:01.192+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T00:38:01.193+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T00:38:01.199+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T00:38:01.199+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T00:41:36.223+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.UserService   : Login attempt for email: jon@gmailcom
+2026-07-09T00:41:36.242+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T00:41:36.242+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:41:36.249+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T00:41:36.254+05:30  INFO 26072 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T01:47:54.007+05:30  WARN 26072 --- [quitq] [HikariPool-6:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=14m13s116ms135µs101ns).
+2026-07-09T01:49:22.156+05:30  INFO 26072 --- [quitq] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-09T01:49:22.163+05:30  INFO 26072 --- [quitq] [Thread-21] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-09T01:49:22.292+05:30  INFO 26072 --- [quitq] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-09T01:49:22.296+05:30  INFO 26072 --- [quitq] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T01:49:22.299+05:30  INFO 26072 --- [quitq] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-07-09T01:49:22.303+05:30  INFO 26072 --- [quitq] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-07-09T01:49:22.469+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 26072 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T01:49:22.469+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T01:49:22.597+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T01:49:22.637+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 10 JPA repository interfaces.
+2026-07-09T01:49:22.731+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T01:49:22.732+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T01:49:22.732+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T01:49:22.752+05:30  INFO 26072 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 281 ms
+2026-07-09T01:49:22.780+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T01:49:22.797+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T01:49:22.799+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-07-09T01:49:22.811+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71fbce7d
+2026-07-09T01:49:22.811+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-07-09T01:49:22.813+05:30  WARN 26072 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T01:49:22.814+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T01:49:22.934+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T01:49:22.966+05:30  INFO 26072 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T01:49:23.110+05:30  WARN 26072 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 58375418-c577-4049-8ea7-d9e05cba7500
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T01:49:23.111+05:30  INFO 26072 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T01:49:23.242+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T01:49:23.244+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 0.796 seconds (process running for 33230.108)
+2026-07-09T01:49:23.246+05:30  INFO 26072 --- [quitq] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-09T01:49:24.652+05:30  INFO 26072 --- [quitq] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (3 additions, 0 deletions, 3 modifications)
+2026-07-09T01:49:24.654+05:30  INFO 26072 --- [quitq] [Thread-25] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-09T01:49:24.743+05:30  INFO 26072 --- [quitq] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-09T01:49:24.745+05:30  INFO 26072 --- [quitq] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T01:49:24.746+05:30  INFO 26072 --- [quitq] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-07-09T01:49:24.748+05:30  INFO 26072 --- [quitq] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-07-09T01:49:24.811+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 26072 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T01:49:24.811+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T01:49:24.915+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T01:49:24.938+05:30  INFO 26072 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 10 JPA repository interfaces.
+2026-07-09T01:49:24.999+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T01:49:25.001+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T01:49:25.001+05:30  INFO 26072 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T01:49:25.022+05:30  INFO 26072 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 210 ms
+2026-07-09T01:49:25.050+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T01:49:25.067+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T01:49:25.067+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-07-09T01:49:25.079+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f4261c9
+2026-07-09T01:49:25.080+05:30  INFO 26072 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-07-09T01:49:25.081+05:30  WARN 26072 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T01:49:25.082+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T01:49:25.178+05:30  INFO 26072 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T01:49:25.201+05:30  INFO 26072 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T01:49:25.327+05:30  WARN 26072 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 87a31752-6e44-4945-8c61-399248c8a7bb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T01:49:25.328+05:30  INFO 26072 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T01:49:25.398+05:30  INFO 26072 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T01:49:25.399+05:30  INFO 26072 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 0.601 seconds (process running for 33232.263)
+2026-07-09T01:49:25.400+05:30  INFO 26072 --- [quitq] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-09T01:54:09.602+05:30  INFO 15296 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 15296 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T01:54:09.606+05:30  INFO 15296 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T01:54:09.666+05:30  INFO 15296 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-09T01:54:09.667+05:30  INFO 15296 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-09T01:54:10.685+05:30  INFO 15296 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T01:54:10.769+05:30  INFO 15296 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 10 JPA repository interfaces.
+2026-07-09T01:54:11.501+05:30  INFO 15296 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T01:54:11.524+05:30  INFO 15296 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T01:54:11.525+05:30  INFO 15296 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T01:54:11.574+05:30  INFO 15296 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1907 ms
+2026-07-09T01:54:11.793+05:30  INFO 15296 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T01:54:11.936+05:30  INFO 15296 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-07-09T01:54:13.807+05:30  INFO 15296 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T01:54:13.870+05:30  INFO 15296 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-09T01:54:14.883+05:30  INFO 15296 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@600049f
+2026-07-09T01:54:14.895+05:30  INFO 15296 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-09T01:54:15.064+05:30  WARN 15296 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T01:54:15.117+05:30  INFO 15296 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T01:54:17.367+05:30  INFO 15296 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T01:54:17.445+05:30  INFO 15296 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T01:54:17.538+05:30  INFO 15296 --- [quitq] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-09T01:54:18.292+05:30  WARN 15296 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fe9cfba1-1d17-42c4-a6dc-874998f04443
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T01:54:18.309+05:30  INFO 15296 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T01:54:20.701+05:30  INFO 15296 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T01:54:20.716+05:30  INFO 15296 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 11.488 seconds (process running for 11.937)
+2026-07-09T01:56:28.483+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T01:56:28.485+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T01:56:28.487+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-09T01:56:28.849+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.UserService   : Registering new user with email: yuva@gmail.com
+2026-07-09T01:56:30.688+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.UserService   : User registered successfully with ID: 8
+2026-07-09T01:56:56.652+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.UserService   : Login attempt for email: yuva@gmail.com
+2026-07-09T01:56:56.953+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T01:56:56.956+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T01:56:57.032+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T01:56:57.070+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T01:57:01.983+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Adding product ID: 12 to cart for user ID: 8
+2026-07-09T01:57:01.985+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T01:57:02.049+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : New cart created for user ID: 8
+2026-07-09T01:57:02.123+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 14
+2026-07-09T02:00:31.914+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Adding product ID: 10 to cart for user ID: 8
+2026-07-09T02:00:31.914+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:31.930+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:31.964+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 15
+2026-07-09T02:00:34.330+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:00:34.330+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:34.346+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:34.379+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:00:34.379+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:34.397+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:38.747+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T02:00:38.747+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:38.747+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:38.781+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T02:00:40.269+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:00:40.269+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:00:40.289+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:00:40.295+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:00:43.985+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Adding product ID: 9 to cart for user ID: 8
+2026-07-09T02:00:43.985+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:43.997+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:44.030+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 16
+2026-07-09T02:00:47.696+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Adding product ID: 12 to cart for user ID: 8
+2026-07-09T02:00:47.696+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:47.696+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:47.745+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 17
+2026-07-09T02:00:51.691+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:00:51.692+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:51.696+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:51.734+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:00:51.734+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:51.745+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:56.708+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T02:00:56.708+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:00:56.711+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:56.713+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:00:56.733+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T02:00:56.745+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:00:56.760+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:00:56.766+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:03:01.943+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.q.service.ShippingAddressService     : Adding new address for user ID: 8
+2026-07-09T02:03:01.978+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.q.service.ShippingAddressService     : Address added successfully with ID: 11
+2026-07-09T02:03:03.221+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T02:03:03.226+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:03:03.242+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:03:03.259+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:03:14.254+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.OrderService    : Placing order for user ID: 8
+2026-07-09T02:03:14.268+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T02:03:14.268+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:03:14.276+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:03:14.310+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.OrderService    : Order placed successfully with ID: 13
+2026-07-09T02:03:14.326+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T02:03:14.326+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:03:14.341+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:03:14.342+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T02:03:14.359+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.OrderService    : Cart cleared after order placement for user ID: 8
+2026-07-09T02:03:14.392+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T02:03:14.393+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T02:03:14.396+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T02:03:14.396+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T02:03:17.833+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T02:03:17.889+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T02:03:24.538+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.OrderService    : Fetching order items for order ID: 13
+2026-07-09T02:03:48.071+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:03:48.071+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:03:48.086+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:03:48.099+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:03:58.453+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.UserService   : Login attempt for email: raj@gmail.com
+2026-07-09T02:03:58.460+05:30 ERROR 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.UserService   : Login failed for email: raj@gmail.com
+2026-07-09T02:03:58.480+05:30  WARN 15296 --- [quitq] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Invalid email or password!]
+2026-07-09T02:04:05.482+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: raj@gmail.com
+2026-07-09T02:04:05.494+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.SellerService   : Seller login successful for email: raj@gmail.com
+2026-07-09T02:04:10.330+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:04:10.341+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T02:04:10.342+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:04:10.374+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T02:04:18.127+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T02:04:18.196+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 3
+2026-07-09T02:04:25.226+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:04:25.242+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T02:04:25.249+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:04:25.279+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 3
+2026-07-09T02:04:47.816+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.UserService   : Login attempt for email: jon@gmailcom
+2026-07-09T02:04:47.855+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:04:47.855+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:04:47.880+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:04:47.891+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:05:49.663+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:05:49.665+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:05:49.673+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:05:49.690+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:05:49.690+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:05:49.707+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:05:50.995+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:05:50.995+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:05:51.013+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:05:51.029+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:05:53.357+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Adding product ID: 10 to cart for user ID: 7
+2026-07-09T02:05:53.357+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:05:53.357+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:05:53.389+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 18
+2026-07-09T02:05:56.537+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:05:56.538+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:05:56.549+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:05:56.566+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:05:56.566+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:05:56.576+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:03.102+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 7
+2026-07-09T02:06:03.104+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:03.105+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:03.106+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:03.115+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 7
+2026-07-09T02:06:03.123+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:03.123+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:03.135+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:06.511+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:06.511+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:06.511+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:06.548+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:06.548+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:06.560+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:07.414+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:06:07.414+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:06:07.432+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:06:07.445+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:06:13.172+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:13.172+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:13.172+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:13.206+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:13.207+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:13.207+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:16.507+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Updating cart item ID: 18 with quantity: 2
+2026-07-09T02:06:16.573+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart item updated successfully with ID: 18
+2026-07-09T02:06:16.587+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:16.589+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:16.590+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:17.889+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Updating cart item ID: 18 with quantity: 1
+2026-07-09T02:06:17.927+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart item updated successfully with ID: 18
+2026-07-09T02:06:17.940+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:17.940+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:17.940+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:20.473+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Removing cart item with ID: 18
+2026-07-09T02:06:20.504+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart item removed successfully with ID: 18
+2026-07-09T02:06:20.521+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 7
+2026-07-09T02:06:20.521+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 7
+2026-07-09T02:06:20.524+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 7
+2026-07-09T02:06:22.177+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:06:22.177+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:06:22.191+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T02:06:22.206+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:06:31.842+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.AdminServiceImpl       : Login attempt for admin with email: admin@quitq.com
+2026-07-09T02:06:31.852+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.AdminServiceImpl       : Admin login successful for email: admin@quitq.com
+2026-07-09T02:06:31.880+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T02:06:31.883+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T02:06:31.884+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:06:31.885+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T02:06:31.888+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T02:06:31.889+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T02:06:31.889+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T02:06:31.889+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T02:06:31.954+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T02:06:31.970+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T02:06:31.970+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T02:06:31.954+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T02:06:31.970+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T02:06:32.005+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T02:06:32.005+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T02:06:32.056+05:30  INFO 15296 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T09:30:27.871+05:30  INFO 20848 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 20848 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T09:30:27.875+05:30  INFO 20848 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T09:30:27.938+05:30  INFO 20848 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-09T09:30:27.938+05:30  INFO 20848 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-09T09:30:28.820+05:30  INFO 20848 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T09:30:28.894+05:30  INFO 20848 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2026-07-09T09:30:29.577+05:30  INFO 20848 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T09:30:29.595+05:30  INFO 20848 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T09:30:29.595+05:30  INFO 20848 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T09:30:29.640+05:30  INFO 20848 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1701 ms
+2026-07-09T09:30:29.841+05:30  INFO 20848 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T09:30:29.909+05:30  INFO 20848 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-07-09T09:30:30.373+05:30  INFO 20848 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T09:30:30.402+05:30  INFO 20848 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-09T09:30:30.674+05:30  INFO 20848 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f41913
+2026-07-09T09:30:30.677+05:30  INFO 20848 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-09T09:30:30.729+05:30  WARN 20848 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T09:30:30.746+05:30  INFO 20848 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T09:30:31.706+05:30  INFO 20848 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T09:30:31.831+05:30  INFO 20848 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T09:30:31.918+05:30  INFO 20848 --- [quitq] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-09T09:30:32.412+05:30  WARN 20848 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ed395343-44d6-41f0-8a25-f9b3a727b53a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T09:30:32.420+05:30  INFO 20848 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T09:30:37.419+05:30  INFO 20848 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T09:30:37.470+05:30  INFO 20848 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 10.094 seconds (process running for 10.593)
+2026-07-09T10:17:21.910+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T10:17:21.911+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T10:17:21.914+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-07-09T10:17:22.273+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.SellerService   : Registering new seller with email: sara@gmail.com
+2026-07-09T10:17:23.580+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.SellerService   : Seller registered successfully with ID: 4
+2026-07-09T10:17:33.925+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: sara@gmail.com
+2026-07-09T10:17:33.973+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.SellerService   : Seller login successful for email: sara@gmail.com
+2026-07-09T10:17:38.452+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:17:38.516+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:19:56.921+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Adding product Premium Arabica Coffee Beans
+2026-07-09T10:20:46.534+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Adding product Classic Filter Coffee Powder
+2026-07-09T10:20:54.186+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:20:54.219+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:20:54.229+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:20:54.306+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:21:33.727+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Deleting product 14
+2026-07-09T10:21:38.553+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:21:38.563+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:22:58.837+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Adding product Classic Filter Coffee Powder
+2026-07-09T10:23:04.745+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:04.747+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:23:04.757+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:04.769+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:23:12.784+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:12.792+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:23:12.799+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:12.810+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:23:18.126+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:18.126+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:23:18.155+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:23:18.171+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:27.271+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T10:23:27.291+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T10:23:48.505+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.UserService   : Login attempt for email: yuva@gmail.com
+2026-07-09T10:23:48.588+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:48.588+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T10:23:48.601+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:23:48.609+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T10:23:52.940+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Adding product ID: 13 to cart for user ID: 8
+2026-07-09T10:23:52.940+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:23:52.981+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:23:53.047+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 19
+2026-07-09T10:23:56.703+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Adding product ID: 15 to cart for user ID: 8
+2026-07-09T10:23:56.704+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:23:56.712+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:23:56.761+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 20
+2026-07-09T10:24:19.216+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T10:24:19.216+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:19.222+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:19.248+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T10:24:19.248+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:19.256+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:25.683+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T10:24:25.683+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:25.683+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T10:24:25.690+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:25.703+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T10:24:25.707+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T10:24:25.707+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:25.713+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:37.436+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.OrderService    : Placing order for user ID: 8
+2026-07-09T10:24:37.453+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T10:24:37.453+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:37.457+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:37.490+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.OrderService    : Order placed successfully with ID: 14
+2026-07-09T10:24:37.511+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T10:24:37.511+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:37.514+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:37.519+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T10:24:37.532+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.OrderService    : Cart cleared after order placement for user ID: 8
+2026-07-09T10:24:37.565+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T10:24:37.568+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T10:24:37.572+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T10:24:37.574+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T10:24:41.262+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T10:24:41.282+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T10:24:49.378+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T10:24:49.378+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:24:49.395+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:24:49.409+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T10:24:58.248+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: sara@gmail.com
+2026-07-09T10:24:58.254+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.SellerService   : Seller login successful for email: sara@gmail.com
+2026-07-09T10:25:01.265+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:01.273+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:01.296+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:01.298+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:06.480+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:06.484+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:06.491+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:06.503+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:11.289+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:11.294+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:11.299+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:11.307+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:19.284+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T10:25:19.306+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T10:25:33.424+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:33.430+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:33.435+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:33.442+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:41.155+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:41.166+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T10:25:41.166+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T10:25:41.178+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T11:29:25.209+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T11:29:25.232+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T11:29:25.275+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T11:29:25.278+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T11:29:29.530+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T11:29:29.566+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T12:41:44.570+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: sara@gmail.com
+2026-07-09T12:41:44.589+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.SellerService   : Seller login successful for email: sara@gmail.com
+2026-07-09T12:46:34.832+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: sara@gmail.com
+2026-07-09T12:46:34.840+05:30 ERROR 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.SellerService   : Seller login failed for email: sara@gmail.com
+2026-07-09T12:46:34.903+05:30  WARN 20848 --- [quitq] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Invalid email or password!]
+2026-07-09T16:53:01.725+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.UserService   : Login attempt for email: yuva@gmail.com
+2026-07-09T16:53:01.841+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T16:53:01.843+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T16:53:01.883+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T16:53:01.905+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:07:48.010+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.UserService   : Login attempt for email: yuva@gmail.com
+2026-07-09T17:07:48.056+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:07:48.055+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:07:48.076+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:07:48.094+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:07:55.760+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Adding product ID: 15 to cart for user ID: 8
+2026-07-09T17:07:55.760+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:07:55.781+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:07:55.812+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 21
+2026-07-09T17:07:58.416+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Adding product ID: 13 to cart for user ID: 8
+2026-07-09T17:07:58.417+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:07:58.424+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:07:58.463+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Item added to cart successfully with ID: 22
+2026-07-09T17:08:01.716+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T17:08:01.719+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:01.732+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:01.765+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T17:08:01.765+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:01.772+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:04.765+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Removing cart item with ID: 21
+2026-07-09T17:08:04.801+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.CartService   : Cart item removed successfully with ID: 21
+2026-07-09T17:08:04.823+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T17:08:04.824+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:04.834+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:08.480+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T17:08:08.480+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T17:08:08.481+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:08.486+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:08.501+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.h.q.service.ShippingAddressService     : Fetching addresses for user ID: 8
+2026-07-09T17:08:08.515+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T17:08:08.515+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:08.522+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:21.408+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Placing order for user ID: 8
+2026-07-09T17:08:21.423+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T17:08:21.424+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:21.433+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:21.490+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Order placed successfully with ID: 15
+2026-07-09T17:08:21.503+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T17:08:21.504+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:21.507+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:21.522+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T17:08:21.532+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Cart cleared after order placement for user ID: 8
+2026-07-09T17:08:21.544+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Clearing cart for user ID: 8
+2026-07-09T17:08:21.545+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T17:08:21.551+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T17:08:21.556+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.CartService   : Cart cleared successfully for user ID: 8
+2026-07-09T17:08:25.240+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T17:08:25.269+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T17:08:32.625+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:08:32.624+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:08:32.643+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:08:32.662+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:08:43.489+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: sara@gmail.com
+2026-07-09T17:08:43.494+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.SellerService   : Seller login successful for email: sara@gmail.com
+2026-07-09T17:08:47.329+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:08:47.339+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:08:59.058+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:08:59.067+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T17:08:59.079+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:08:59.101+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T17:09:06.837+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T17:09:06.863+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T17:09:18.855+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:09:18.864+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T17:09:18.864+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T17:09:18.889+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T17:09:33.760+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Login attempt for admin with email: admin@quitq.com
+2026-07-09T17:09:33.790+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Admin login successful for email: admin@quitq.com
+2026-07-09T17:09:33.829+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T17:09:33.831+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T17:09:33.834+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T17:09:33.835+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T17:09:33.837+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:09:33.835+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T17:09:33.845+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T17:09:33.846+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T17:09:33.887+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T17:09:33.884+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T17:09:33.889+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T17:09:33.890+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T17:09:33.891+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T17:09:33.928+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T17:09:33.928+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-7] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T17:09:34.001+05:30  INFO 20848 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T21:44:42.256+05:30  INFO 32472 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Starting QuitqApplication using Java 17.0.19 with PID 32472 (D:\Download\quitq\quitq\target\classes started by Sweatha R in D:\Download\quitq\quitq)
+2026-07-09T21:44:42.290+05:30  INFO 32472 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T21:44:42.352+05:30  INFO 32472 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-09T21:44:42.352+05:30  INFO 32472 --- [quitq] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-09T21:44:44.396+05:30  INFO 32472 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-09T21:44:44.710+05:30  INFO 32472 --- [quitq] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 271 ms. Found 10 JPA repository interfaces.
+2026-07-09T21:44:46.712+05:30  INFO 32472 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-09T21:44:46.729+05:30  INFO 32472 --- [quitq] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T21:44:46.730+05:30  INFO 32472 --- [quitq] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-09T21:44:46.782+05:30  INFO 32472 --- [quitq] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4429 ms
+2026-07-09T21:44:46.999+05:30  INFO 32472 --- [quitq] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-09T21:44:47.084+05:30  INFO 32472 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-07-09T21:44:47.598+05:30  INFO 32472 --- [quitq] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-09T21:44:47.632+05:30  INFO 32472 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-09T21:44:48.143+05:30  INFO 32472 --- [quitq] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e2c7a09
+2026-07-09T21:44:48.146+05:30  INFO 32472 --- [quitq] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-09T21:44:48.208+05:30  WARN 32472 --- [quitq] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-09T21:44:48.229+05:30  INFO 32472 --- [quitq] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/QuitQ]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: QuitQ/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-09T21:44:49.189+05:30  INFO 32472 --- [quitq] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-09T21:44:49.279+05:30  INFO 32472 --- [quitq] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-09T21:44:49.351+05:30  INFO 32472 --- [quitq] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-09T21:44:49.845+05:30  WARN 32472 --- [quitq] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 52548bb2-cfc5-44f4-8734-9eb32d858132
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-07-09T21:44:49.857+05:30  INFO 32472 --- [quitq] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-07-09T21:44:50.450+05:30  INFO 32472 --- [quitq] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-09T21:44:50.456+05:30  INFO 32472 --- [quitq] [restartedMain] com.hexaware.quitq.QuitqApplication      : Started QuitqApplication in 8.708 seconds (process running for 9.358)
+2026-07-09T21:45:11.599+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T21:45:11.599+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T21:45:11.599+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-07-09T21:45:11.748+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.UserService   : Login attempt for email: yuva@gmail.com
+2026-07-09T21:45:13.198+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:45:13.196+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:45:13.369+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:45:13.371+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:46:49.749+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T21:46:49.749+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T21:46:49.775+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T21:46:49.796+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Fetching cart items for user ID: 8
+2026-07-09T21:46:49.796+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Getting or creating cart for user ID: 8
+2026-07-09T21:46:49.805+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] com.hexaware.quitq.service.CartService   : Cart found for user ID: 8
+2026-07-09T21:46:51.565+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:46:51.565+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:46:51.582+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:46:51.597+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:46:52.565+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-9] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T21:46:52.644+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T21:46:54.696+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:46:54.696+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:46:54.709+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:46:54.724+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:46:56.148+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T21:46:56.167+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for user ID: 8
+2026-07-09T21:47:22.291+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.SellerService   : Login attempt for seller with email: sara@gmail.com
+2026-07-09T21:47:22.305+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.SellerService   : Seller login successful for email: sara@gmail.com
+2026-07-09T21:47:43.328+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:47:43.335+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T21:47:43.340+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:47:43.359+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T21:47:58.383+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-6] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T21:47:58.434+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.OrderService    : Fetching orders for seller ID: 4
+2026-07-09T21:48:10.724+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:48:10.732+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-4] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T21:48:10.737+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.CategoryService        : Fetching all categories
+2026-07-09T21:48:10.750+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] c.hexaware.quitq.service.ProductService  : Fetching products by seller 4
+2026-07-09T21:48:26.217+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Login attempt for admin with email: admin@quitq.com
+2026-07-09T21:48:26.229+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Admin login successful for email: admin@quitq.com
+2026-07-09T21:48:26.253+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-9] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T21:48:26.253+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-10] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T21:48:26.253+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-10] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T21:48:26.257+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T21:48:26.258+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-8] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T21:48:26.260+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T21:48:26.260+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:48:26.266+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T21:48:26.285+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T21:48:26.285+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] com.hexaware.quitq.service.UserService   : Fetching all users
+2026-07-09T21:48:26.287+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T21:48:26.287+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T21:48:26.301+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T21:48:26.303+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-2] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T21:48:26.313+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-4] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T21:48:26.360+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-1] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T22:26:19.403+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] c.h.quitq.service.AdminServiceImpl       : Fetching all users for admin
+2026-07-09T22:26:19.403+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-8] c.h.quitq.service.AdminServiceImpl       : Fetching all products for admin
+2026-07-09T22:26:19.403+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-6] c.h.quitq.service.AdminServiceImpl       : Fetching dashboard counts
+2026-07-09T22:26:19.403+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] c.h.quitq.service.AdminServiceImpl       : Fetching all sellers for admin
+2026-07-09T22:26:19.403+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-7] c.h.quitq.service.AdminServiceImpl       : Fetching all orders for admin
+2026-07-09T22:26:19.404+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-8] c.hexaware.quitq.service.ProductService  : Fetching all products
+2026-07-09T22:26:19.404+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-5] c.hexaware.quitq.service.SellerService   : Fetching all sellers
+2026-07-09T22:26:19.404+05:30  INFO 32472 --- [quitq] [http-nio-8080-exec-3] com.hexaware.quitq.service.UserService   : Fetching all users
